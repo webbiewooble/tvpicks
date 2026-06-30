@@ -170,7 +170,7 @@
       </div>
     </div>
 
-    <main class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <main class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-2">
       <div id="home-view" class="space-y-12">
         <div
           class="flex flex-col lg:flex-row items-center justify-between gap-12 mt-10"
@@ -1008,98 +1008,104 @@
     </main>
 
     <footer
-      class="bg-white border-t border-slate-200 mt-16 pt-12 pb-6 px-4 sm:px-6 lg:px-8"
+      class="bg-slate-50 border-t border-slate-200 mt-2 pt-12 pb-6 px-4 sm:px-6 lg:px-8"
     >
       <div class="max-w-[1600px] mx-auto">
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10"
-        >
-          <div>
-            <h4 class="text-xs font-bold text-[#2563eb] mb-5 tracking-wider">
-              GET IN TOUCH
-            </h4>
-            <div
-              class="flex flex-col gap-4 text-[13px] font-medium text-slate-700"
-            >
-              <a
-                href="https://wa.me/918588853774"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
-              >
-                <i
-                  data-lucide="message-circle"
-                  class="w-5 h-5 text-slate-400"
-                ></i>
-                <span>WhatsApp Support Available</span>
-              </a>
-              <a
-                href="tel:+918588853774"
-                class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
-              >
-                <i data-lucide="phone" class="w-5 h-5 text-slate-400"></i>
-                <span>+91 85888 53774</span>
-              </a>
-              <a
-                href="https://www.tvpix.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
-              >
-                <i data-lucide="globe" class="w-5 h-5 text-slate-400"></i>
-                <span>www.tvpix.in</span>
-              </a>
+        <!-- Main Footer Card -->
+        <div class="bg-white border border-slate-200/80 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] p-6 sm:p-8 mb-8">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-0 divide-y lg:divide-y-0 lg:divide-x divide-slate-200/80 items-stretch"
+          >
+            <!-- Column 1: GET IN TOUCH -->
+            <div class="pb-6 lg:pb-0 lg:pr-8 flex flex-col justify-center text-left">
+              <h4 class="text-xs font-bold text-[#2563eb] mb-4 tracking-wider uppercase">
+                GET IN TOUCH
+              </h4>
+              <div class="flex flex-col gap-3 text-[12px] font-medium text-slate-700">
+                <a
+                  href="https://wa.me/919015252400"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
+                >
+                  <i
+                    data-lucide="message-circle"
+                    class="w-4.5 h-4.5 text-slate-400 shrink-0"
+                  ></i>
+                  <span>WhatsApp Support Available</span>
+                </a>
+                <a
+                  href="tel:+919015252400"
+                  class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
+                >
+                  <i data-lucide="phone" class="w-4.5 h-4.5 text-slate-400 shrink-0"></i>
+                  <span>+91 90152 52400</span>
+                </a>
+                <a
+                  href="https://www.tvpix.in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-3 hover:text-[#2563eb] transition-colors"
+                >
+                  <i data-lucide="globe" class="w-4.5 h-4.5 text-slate-400 shrink-0"></i>
+                  <span>www.tvpix.in</span>
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="flex items-start gap-4 lg:px-4">
-            <i
-              data-lucide="shield-check"
-              class="w-10 h-10 text-[#1e3a8a] shrink-0"
-              stroke-width="1.5"
-            ></i>
-            <p class="text-sm font-bold text-slate-700 leading-relaxed">
-              We are committed to providing legal, authorized and premium
-              entertainment services.
-            </p>
-          </div>
+            <!-- Column 2: Commitment Shield -->
+            <div class="py-6 lg:py-0 lg:px-8 flex items-center gap-4 text-left">
+              <div class="shrink-0">
+                <svg class="w-10 h-12 text-[#0f172a]" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+                  <circle cx="12" cy="12" r="3.5" fill="#1e3a8a"/>
+                </svg>
+              </div>
+              <p class="text-[11.5px] font-medium text-slate-600 leading-normal">
+                We are committed to providing legal, authorized and premium entertainment services.
+              </p>
+            </div>
 
-          <div class="lg:px-4">
-            <div class="flex flex-col mb-4">
+            <!-- Column 3: Logo & Verification Text -->
+            <div class="py-6 lg:py-0 lg:px-8 flex flex-col items-center justify-center text-center">
               <img
                 src="brand-logo.png"
                 alt="TVPicks Logo"
-                class="max-h-[160px] h-32 w-auto object-contain mix-blend-multiply mb-2"
+                class="max-h-[72px] h-14 w-auto object-contain mix-blend-multiply mb-2"
               />
-              <span
-                class="text-[8px] font-bold text-slate-500 tracking-wider uppercase"
-              >
+              <span class="text-[9px] font-extrabold text-slate-500 tracking-[0.08em] uppercase block leading-tight">
                 Legal & Authorized<br />Entertainment Services
               </span>
             </div>
-            <p class="text-[11px] text-slate-500 font-medium leading-relaxed">
-              Operated by<br />
-              <strong class="text-slate-800 text-[13px]"
-                >ANANYA ENTERPRISES</strong
-              ><br />
-              GST Registered Business
-            </p>
-          </div>
 
-          <div>
-            <p
-              class="text-[11px] font-medium text-slate-400 leading-relaxed text-right lg:text-left"
-            >
-              All logos, trademarks and brand names belong to their respective
-              owners.<br /><br />
-              Services are provided subject to platform availability and
-              authorization.
-            </p>
+            <!-- Column 4: Operated By -->
+            <div class="py-6 lg:py-0 lg:px-8 flex flex-col justify-center text-center lg:text-left">
+              <p class="text-[10px] font-semibold text-slate-400 uppercase tracking-wider mb-1">
+                Operated by
+              </p>
+              <strong class="text-slate-800 text-[13px] font-black tracking-wide block uppercase">
+                ANANYA ENTERPRISES
+              </strong>
+              <span class="text-[10px] font-medium text-slate-400 block mt-1">
+                GST Registered Business
+              </span>
+            </div>
+
+            <!-- Column 5: Disclaimer -->
+            <div class="pt-6 lg:pt-0 lg:pl-8 flex flex-col justify-center text-left text-[11px] font-medium text-slate-500 leading-normal space-y-2">
+              <p>
+                All logos, trademarks and brand names belong to their respective owners.
+              </p>
+              <p>
+                Services are provided subject to platform availability and authorization.
+              </p>
+            </div>
           </div>
         </div>
 
+        <!-- Footer Copyright Row -->
         <div
-          class="border-t border-slate-100 pt-6 flex flex-col md:flex-row items-center justify-between gap-4"
+          class="pt-4 flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <p class="text-xs font-bold text-slate-500">
             © 2026 TVPICKS. All Rights Reserved.
@@ -1188,7 +1194,7 @@
             mainEl.className = "w-full";
           }
           if (footerEl) {
-            footerEl.className = "bg-white border-t border-slate-200 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
+            footerEl.className = "bg-slate-50 border-t border-slate-200 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
           }
           homeView.classList.add("hidden");
           aboutView.classList.remove("hidden");
@@ -1202,7 +1208,7 @@
             mainEl.className = "w-full";
           }
           if (footerEl) {
-            footerEl.className = "bg-white border-t border-slate-200 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
+            footerEl.className = "bg-slate-50 border-t border-slate-200 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
           }
           homeView.classList.add("hidden");
           aboutView.classList.add("hidden");
@@ -1216,7 +1222,7 @@
             mainEl.className = "w-full";
           }
           if (footerEl) {
-            footerEl.className = "bg-white border-t border-slate-200 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
+            footerEl.className = "bg-slate-50 border-t border-slate-200 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
           }
           homeView.classList.add("hidden");
           aboutView.classList.add("hidden");
@@ -1230,7 +1236,7 @@
             mainEl.className = "w-full";
           }
           if (footerEl) {
-            footerEl.className = "bg-white border-t border-slate-200 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
+            footerEl.className = "bg-slate-50 border-t border-slate-200 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
           }
           homeView.classList.add("hidden");
           aboutView.classList.add("hidden");
@@ -1241,10 +1247,10 @@
           window.scrollTo({ top: 0, behavior: "smooth" });
         } else {
           if (mainEl) {
-            mainEl.className = "max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-16";
+            mainEl.className = "max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-2";
           }
           if (footerEl) {
-            footerEl.className = "bg-white border-t border-slate-200 mt-16 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
+            footerEl.className = "bg-slate-50 border-t border-slate-200 mt-2 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
           }
           homeView.classList.remove("hidden");
           aboutView.classList.add("hidden");
