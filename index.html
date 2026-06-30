@@ -797,14 +797,15 @@
       <!-- About Us View Section -->
       <div id="about-view" class="hidden w-full">
         <div
-          class="bg-white overflow-hidden relative min-h-[750px] lg:min-h-[850px] grid grid-cols-1 lg:grid-cols-12 w-full"
+          class="bg-white bg-cover bg-center overflow-hidden relative min-h-[750px] lg:min-h-[850px] grid grid-cols-1 lg:grid-cols-12 w-full"
+          style="background-image: url('policies-bg.png');"
         >
           <!-- Bottom Center Decorative Accent -->
           <div class="absolute bottom-0 left-1/3 right-1/3 h-[4px] bg-red-600 rounded-t-full opacity-90 z-20"></div>
 
           <!-- Left Content Column -->
           <div
-            class="p-8 sm:p-12 md:p-16 lg:py-16 lg:pl-24 xl:pl-32 2xl:pl-48 lg:pr-16 lg:col-span-7 flex flex-col justify-center relative overflow-hidden"
+            class="p-8 sm:p-12 md:p-16 lg:py-16 lg:pl-24 xl:pl-32 2xl:pl-48 lg:pr-16 lg:col-span-6 flex flex-col justify-center relative overflow-hidden"
           >
             <!-- Top-Left Corner Decorative Curve -->
             <div class="absolute top-0 left-0 w-48 h-48 pointer-events-none select-none z-10">
@@ -875,164 +876,19 @@
             </div>
           </div>
 
-          <!-- Right Visual Graphic Column -->
-          <div
-            class="relative lg:col-span-5 bg-[#f8fafc] overflow-hidden flex flex-col items-center justify-center p-8 sm:p-12 min-h-[400px] lg:min-h-full"
-          >
-            <!-- Glowing effects -->
-            <div class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute top-1/4 left-1/4 w-48 h-48 bg-red-400/10 rounded-full blur-2xl pointer-events-none"></div>
-
-            <!-- Custom SVG Ribbons Background -->
-            <svg
-              class="absolute inset-0 w-full h-full pointer-events-none"
-              viewBox="0 0 500 700"
-              preserveAspectRatio="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <!-- Gradients definitions -->
-              <defs>
-                <linearGradient
-                  id="blueRibbon"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#0a1d4a" />
-                  <stop offset="30%" stop-color="#1e3a8a" />
-                  <stop offset="70%" stop-color="#2563eb" />
-                  <stop offset="100%" stop-color="#3b82f6" />
-                </linearGradient>
-                <linearGradient
-                  id="redRibbon"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#7f1d1d" />
-                  <stop offset="50%" stop-color="#dc2626" />
-                  <stop offset="100%" stop-color="#f87171" />
-                </linearGradient>
-                <linearGradient
-                  id="lightBlueSheen"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
-                  <stop offset="50%" stop-color="#e0f2fe" stop-opacity="1" />
-                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
-                </linearGradient>
-                <radialGradient id="cornerGlow" cx="100%" cy="100%" r="80%">
-                  <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4" />
-                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
-                </radialGradient>
-              </defs>
-
-              <!-- Dot grid background -->
-              <pattern
-                id="gridDots"
-                width="18"
-                height="18"
-                patternUnits="userSpaceOnUse"
-              >
-                <circle cx="2" cy="2" r="1.2" fill="#94a3b8" opacity="0.3" />
-              </pattern>
-              <rect
-                width="100%"
-                height="100%"
-                fill="url(#gridDots)"
-              />
-
-              <!-- Corner glows -->
-              <rect width="100%" height="100%" fill="url(#cornerGlow)" />
-
-              <!-- High-fidelity Glossy Sweeping Ribbons -->
-              <!-- 1. Background Shadow Ribbon -->
-              <path
-                d="M 40 0 C 290 120, -60 480, 260 700"
-                fill="none"
-                stroke="#e2e8f0"
-                stroke-width="85"
-                stroke-linecap="round"
-                opacity="0.6"
-              />
-              <path
-                d="M 40 0 C 290 120, -60 480, 260 700"
-                fill="none"
-                stroke="#cbd5e1"
-                stroke-width="65"
-                stroke-linecap="round"
-                opacity="0.4"
-              />
-
-              <!-- 2. Dark Blue Ribbon (Right Side) -->
-              <path
-                d="M 60 0 C 310 120, -40 480, 280 700"
-                fill="none"
-                stroke="url(#blueRibbon)"
-                stroke-width="48"
-                stroke-linecap="round"
-              />
-
-              <!-- 3. Red Accent Ribbon (Left Side of Blue Ribbon) -->
-              <path
-                d="M 25 0 C 275 120, -75 480, 245 700"
-                fill="none"
-                stroke="url(#redRibbon)"
-                stroke-width="16"
-                stroke-linecap="round"
-              />
-
-              <!-- 4. Glossy Highlight/Reflection Strip -->
-              <path
-                d="M 60 0 C 310 120, -40 480, 280 700"
-                fill="none"
-                stroke="url(#lightBlueSheen)"
-                stroke-width="8"
-                stroke-linecap="round"
-              />
-
-              <!-- 5. Fine White Sparkle Seam -->
-              <path
-                d="M 60 0 C 310 120, -40 480, 280 700"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                opacity="0.9"
-              />
-
-              <!-- Secondary Accent Curves for Depth -->
-              <path
-                d="M 100 -50 C 350 150, 0 500, 350 750"
-                fill="none"
-                stroke="#60a5fa"
-                stroke-width="2"
-                stroke-dasharray="6 4"
-                opacity="0.4"
-              />
-              <path
-                d="M -50 100 C 150 300, -150 500, 100 800"
-                fill="none"
-                stroke="#f87171"
-                stroke-width="1.5"
-                opacity="0.3"
-              />
-            </svg>
-
-            <!-- Central floating brand logo (Just clean sitting, matching the mockup!) -->
-            <div
-              class="relative z-10 text-center flex flex-col items-center select-none transform hover:scale-[1.03] transition-transform duration-500 max-w-[640px] w-full"
-            >
+          <!-- Right Content Column (Logo) -->
+          <div class="hidden lg:flex lg:col-span-6 flex-col items-end justify-start pt-16 sm:pt-24 lg:pr-16 xl:pr-32">
+            <div class="flex flex-col items-center">
               <img
                 src="brand-logo.png"
                 alt="TVPicks Logo"
-                class="w-full h-auto object-contain mix-blend-multiply drop-shadow-md"
+                class="w-[280px] xl:w-[360px] h-auto object-contain mix-blend-multiply drop-shadow-md"
               />
+              <p
+                class="text-[13px] font-bold text-slate-500 tracking-[0.05em] text-center mt-2"
+              >
+                Authorized OTT & IPTV Services
+              </p>
             </div>
           </div>
         </div>
@@ -1040,14 +896,15 @@
       <!-- Privacy Policy View Section -->
       <div id="privacy-policy-view" class="hidden w-full">
         <div
-          class="bg-white overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12 w-full"
+          class="bg-white bg-cover bg-center overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12 w-full"
+          style="background-image: url('policies-bg.png');"
         >
           <!-- Top Edge Decorative Gradient Bar -->
           <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red-500 via-blue-600 to-red-500 opacity-90 z-20"></div>
 
           <!-- Left Content Column -->
           <div
-            class="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-center"
+            class="p-8 sm:p-12 md:p-16 lg:py-16 lg:pl-24 xl:pl-32 2xl:pl-48 lg:pr-16 lg:col-span-6 flex flex-col justify-center relative overflow-hidden"
           >
             <div class="mb-10">
               <h1
@@ -1103,185 +960,37 @@
             </div>
           </div>
 
-          <!-- Right Visual Graphic Column -->
-          <div
-            class="relative lg:col-span-5 bg-[#f8fafc] overflow-hidden flex flex-col items-center justify-center p-8 sm:p-12 min-h-[400px] lg:min-h-full border-t lg:border-t-0 lg:border-l border-slate-100"
-          >
-            <!-- Glowing effects -->
-            <div class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute top-1/4 left-1/4 w-48 h-48 bg-red-400/10 rounded-full blur-2xl pointer-events-none"></div>
-
-            <!-- Custom SVG Ribbons Background -->
-            <svg
-              class="absolute inset-0 w-full h-full pointer-events-none"
-              viewBox="0 0 500 700"
-              preserveAspectRatio="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <!-- Gradients definitions -->
-              <defs>
-                <linearGradient
-                  id="blueRibbonPrivacy"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#0a1d4a" />
-                  <stop offset="30%" stop-color="#1e3a8a" />
-                  <stop offset="70%" stop-color="#2563eb" />
-                  <stop offset="100%" stop-color="#3b82f6" />
-                </linearGradient>
-                <linearGradient
-                  id="redRibbonPrivacy"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#7f1d1d" />
-                  <stop offset="50%" stop-color="#dc2626" />
-                  <stop offset="100%" stop-color="#f87171" />
-                </linearGradient>
-                <linearGradient
-                  id="lightBlueSheenPrivacy"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
-                  <stop offset="50%" stop-color="#e0f2fe" stop-opacity="1" />
-                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
-                </linearGradient>
-                <radialGradient id="cornerGlowPrivacy" cx="100%" cy="100%" r="80%">
-                  <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4" />
-                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
-                </radialGradient>
-              </defs>
-
-              <!-- Dot grid background -->
-              <pattern
-                id="gridDotsPrivacy"
-                width="18"
-                height="18"
-                patternUnits="userSpaceOnUse"
-              >
-                <circle cx="2" cy="2" r="1.2" fill="#94a3b8" opacity="0.3" />
-              </pattern>
-              <rect
-                width="100%"
-                height="100%"
-                fill="url(#gridDotsPrivacy)"
-              />
-
-              <!-- Corner glows -->
-              <rect width="100%" height="100%" fill="url(#cornerGlowPrivacy)" />
-
-              <!-- High-fidelity Glossy Sweeping Ribbons -->
-              <!-- 1. Background Shadow Ribbon -->
-              <path
-                d="M 0 0 C 250 120, -100 480, 220 700"
-                fill="none"
-                stroke="#e2e8f0"
-                stroke-width="85"
-                stroke-linecap="round"
-                opacity="0.6"
-              />
-              <path
-                d="M 0 0 C 250 120, -100 480, 220 700"
-                fill="none"
-                stroke="#cbd5e1"
-                stroke-width="65"
-                stroke-linecap="round"
-                opacity="0.4"
-              />
-
-              <!-- 2. Dark Blue Ribbon -->
-              <path
-                d="M 10 0 C 260 120, -90 480, 230 700"
-                fill="none"
-                stroke="url(#blueRibbonPrivacy)"
-                stroke-width="48"
-                stroke-linecap="round"
-              />
-
-              <!-- 3. Red Accent Ribbon -->
-              <path
-                d="M 40 0 C 290 120, -60 480, 260 700"
-                fill="none"
-                stroke="url(#redRibbonPrivacy)"
-                stroke-width="18"
-                stroke-linecap="round"
-              />
-
-              <!-- 4. Glossy Highlight/Reflection Strip -->
-              <path
-                d="M 22 0 C 272 120, -78 480, 242 700"
-                fill="none"
-                stroke="url(#lightBlueSheenPrivacy)"
-                stroke-width="8"
-                stroke-linecap="round"
-              />
-
-              <!-- 5. Fine White Sparkle Seam -->
-              <path
-                d="M 25 0 C 275 120, -75 480, 245 700"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                opacity="0.9"
-              />
-
-              <!-- Secondary Accent Curves for Depth -->
-              <path
-                d="M 100 -50 C 350 150, 0 500, 350 750"
-                fill="none"
-                stroke="#60a5fa"
-                stroke-width="2"
-                stroke-dasharray="6 4"
-                opacity="0.4"
-              />
-              <path
-                d="M -50 100 C 150 300, -150 500, 100 800"
-                fill="none"
-                stroke="#f87171"
-                stroke-width="1.5"
-                opacity="0.3"
-              />
-            </svg>
-
-            <!-- Central floating brand logo (Just clean sitting, matching the mockup!) -->
-            <div
-              class="relative z-10 text-center flex flex-col items-center select-none transform hover:scale-[1.03] transition-transform duration-500 max-w-[640px] w-full"
-            >
+          <!-- Right Content Column (Logo) -->
+          <div class="hidden lg:flex lg:col-span-6 flex-col items-end justify-start pt-16 sm:pt-24 lg:pr-16 xl:pr-32">
+            <div class="flex flex-col items-center">
               <img
                 src="brand-logo.png"
                 alt="TVPicks Logo"
-                class="w-full h-auto object-contain mix-blend-multiply drop-shadow-md"
+                class="w-[280px] xl:w-[360px] h-auto object-contain mix-blend-multiply drop-shadow-md"
               />
               <p
-                class="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase whitespace-nowrap bg-white/40 px-3 py-1 rounded-full backdrop-blur-sm border border-white/40 shadow-sm mt-4"
+                class="text-[13px] font-bold text-slate-500 tracking-[0.05em] text-center mt-2"
               >
                 Authorized OTT & IPTV Services
               </p>
             </div>
           </div>
+
         </div>
       </div>
 
       <!-- Refund Policy View Section -->
       <div id="refund-policy-view" class="hidden w-full">
         <div
-          class="bg-white overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12 w-full"
+          class="bg-white bg-cover bg-center overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12 w-full"
+          style="background-image: url('policies-bg.png');"
         >
           <!-- Top Edge Decorative Gradient Bar -->
           <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red-500 via-blue-600 to-red-500 opacity-90 z-20"></div>
 
           <!-- Left Content Column -->
           <div
-            class="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-center"
+            class="p-8 sm:p-12 md:p-16 lg:py-16 lg:pl-24 xl:pl-32 2xl:pl-48 lg:pr-16 lg:col-span-6 flex flex-col justify-center relative overflow-hidden"
           >
             <div class="mb-10">
               <h1
@@ -1337,185 +1046,37 @@
             </div>
           </div>
 
-          <!-- Right Visual Graphic Column -->
-          <div
-            class="relative lg:col-span-5 bg-[#f8fafc] overflow-hidden flex flex-col items-center justify-center p-8 sm:p-12 min-h-[400px] lg:min-h-full border-t lg:border-t-0 lg:border-l border-slate-100"
-          >
-            <!-- Glowing effects -->
-            <div class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute top-1/4 left-1/4 w-48 h-48 bg-red-400/10 rounded-full blur-2xl pointer-events-none"></div>
-
-            <!-- Custom SVG Ribbons Background -->
-            <svg
-              class="absolute inset-0 w-full h-full pointer-events-none"
-              viewBox="0 0 500 700"
-              preserveAspectRatio="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <!-- Gradients definitions -->
-              <defs>
-                <linearGradient
-                  id="blueRibbonRefund"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#0a1d4a" />
-                  <stop offset="30%" stop-color="#1e3a8a" />
-                  <stop offset="70%" stop-color="#2563eb" />
-                  <stop offset="100%" stop-color="#3b82f6" />
-                </linearGradient>
-                <linearGradient
-                  id="redRibbonRefund"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#7f1d1d" />
-                  <stop offset="50%" stop-color="#dc2626" />
-                  <stop offset="100%" stop-color="#f87171" />
-                </linearGradient>
-                <linearGradient
-                  id="lightBlueSheenRefund"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
-                  <stop offset="50%" stop-color="#e0f2fe" stop-opacity="1" />
-                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
-                </linearGradient>
-                <radialGradient id="cornerGlowRefund" cx="100%" cy="100%" r="80%">
-                  <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4" />
-                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
-                </radialGradient>
-              </defs>
-
-              <!-- Dot grid background -->
-              <pattern
-                id="gridDotsRefund"
-                width="18"
-                height="18"
-                patternUnits="userSpaceOnUse"
-              >
-                <circle cx="2" cy="2" r="1.2" fill="#94a3b8" opacity="0.3" />
-              </pattern>
-              <rect
-                width="100%"
-                height="100%"
-                fill="url(#gridDotsRefund)"
-              />
-
-              <!-- Corner glows -->
-              <rect width="100%" height="100%" fill="url(#cornerGlowRefund)" />
-
-              <!-- High-fidelity Glossy Sweeping Ribbons -->
-              <!-- 1. Background Shadow Ribbon -->
-              <path
-                d="M 0 0 C 250 120, -100 480, 220 700"
-                fill="none"
-                stroke="#e2e8f0"
-                stroke-width="85"
-                stroke-linecap="round"
-                opacity="0.6"
-              />
-              <path
-                d="M 0 0 C 250 120, -100 480, 220 700"
-                fill="none"
-                stroke="#cbd5e1"
-                stroke-width="65"
-                stroke-linecap="round"
-                opacity="0.4"
-              />
-
-              <!-- 2. Dark Blue Ribbon -->
-              <path
-                d="M 10 0 C 260 120, -90 480, 230 700"
-                fill="none"
-                stroke="url(#blueRibbonRefund)"
-                stroke-width="48"
-                stroke-linecap="round"
-              />
-
-              <!-- 3. Red Accent Ribbon -->
-              <path
-                d="M 40 0 C 290 120, -60 480, 260 700"
-                fill="none"
-                stroke="url(#redRibbonRefund)"
-                stroke-width="18"
-                stroke-linecap="round"
-              />
-
-              <!-- 4. Glossy Highlight/Reflection Strip -->
-              <path
-                d="M 22 0 C 272 120, -78 480, 242 700"
-                fill="none"
-                stroke="url(#lightBlueSheenRefund)"
-                stroke-width="8"
-                stroke-linecap="round"
-              />
-
-              <!-- 5. Fine White Sparkle Seam -->
-              <path
-                d="M 25 0 C 275 120, -75 480, 245 700"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                opacity="0.9"
-              />
-
-              <!-- Secondary Accent Curves for Depth -->
-              <path
-                d="M 100 -50 C 350 150, 0 500, 350 750"
-                fill="none"
-                stroke="#60a5fa"
-                stroke-width="2"
-                stroke-dasharray="6 4"
-                opacity="0.4"
-              />
-              <path
-                d="M -50 100 C 150 300, -150 500, 100 800"
-                fill="none"
-                stroke="#f87171"
-                stroke-width="1.5"
-                opacity="0.3"
-              />
-            </svg>
-
-            <!-- Central floating brand logo (Just clean sitting, matching the mockup!) -->
-            <div
-              class="relative z-10 text-center flex flex-col items-center select-none transform hover:scale-[1.03] transition-transform duration-500 max-w-[640px] w-full"
-            >
+          <!-- Right Content Column (Logo) -->
+          <div class="hidden lg:flex lg:col-span-6 flex-col items-end justify-start pt-16 sm:pt-24 lg:pr-16 xl:pr-32">
+            <div class="flex flex-col items-center">
               <img
                 src="brand-logo.png"
                 alt="TVPicks Logo"
-                class="w-full h-auto object-contain mix-blend-multiply drop-shadow-md"
+                class="w-[280px] xl:w-[360px] h-auto object-contain mix-blend-multiply drop-shadow-md"
               />
               <p
-                class="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase whitespace-nowrap bg-white/40 px-3 py-1 rounded-full backdrop-blur-sm border border-white/40 shadow-sm mt-4"
+                class="text-[13px] font-bold text-slate-500 tracking-[0.05em] text-center mt-2"
               >
                 Authorized OTT & IPTV Services
               </p>
             </div>
           </div>
+
         </div>
       </div>
 
       <!-- Contact View Section -->
       <div id="contact-view" class="hidden w-full">
         <div
-          class="bg-white overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12 w-full"
+          class="bg-white bg-cover bg-center overflow-hidden relative min-h-[600px] grid grid-cols-1 lg:grid-cols-12 w-full"
+          style="background-image: url('policies-bg.png');"
         >
           <!-- Top Edge Decorative Gradient Bar -->
           <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-red-500 via-blue-600 to-red-500 opacity-90 z-20"></div>
 
           <!-- Left Content Column -->
           <div
-            class="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-center"
+            class="p-8 sm:p-12 md:p-16 lg:py-16 lg:pl-24 xl:pl-32 2xl:pl-48 lg:pr-16 lg:col-span-6 flex flex-col justify-center relative overflow-hidden"
           >
             <div class="mb-10">
               <h1
@@ -1613,171 +1174,22 @@
             </div>
           </div>
 
-          <!-- Right Visual Graphic Column -->
-          <div
-            class="relative lg:col-span-5 bg-[#f8fafc] overflow-hidden flex flex-col items-center justify-center p-8 sm:p-12 min-h-[400px] lg:min-h-full border-t lg:border-t-0 lg:border-l border-slate-100"
-          >
-            <!-- Glowing effects -->
-            <div class="absolute bottom-0 right-0 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute top-1/4 left-1/4 w-48 h-48 bg-red-400/10 rounded-full blur-2xl pointer-events-none"></div>
-
-            <!-- Custom SVG Ribbons Background -->
-            <svg
-              class="absolute inset-0 w-full h-full pointer-events-none"
-              viewBox="0 0 500 700"
-              preserveAspectRatio="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <!-- Gradients definitions -->
-              <defs>
-                <linearGradient
-                  id="blueRibbonContact"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#0a1d4a" />
-                  <stop offset="30%" stop-color="#1e3a8a" />
-                  <stop offset="70%" stop-color="#2563eb" />
-                  <stop offset="100%" stop-color="#3b82f6" />
-                </linearGradient>
-                <linearGradient
-                  id="redRibbonContact"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#7f1d1d" />
-                  <stop offset="50%" stop-color="#dc2626" />
-                  <stop offset="100%" stop-color="#f87171" />
-                </linearGradient>
-                <linearGradient
-                  id="lightBlueSheenContact"
-                  x1="0%"
-                  y1="0%"
-                  x2="100%"
-                  y2="100%"
-                >
-                  <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
-                  <stop offset="50%" stop-color="#e0f2fe" stop-opacity="1" />
-                  <stop offset="100%" stop-color="#0284c7" stop-opacity="0.4" />
-                </linearGradient>
-                <radialGradient id="cornerGlowContact" cx="100%" cy="100%" r="80%">
-                  <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4" />
-                  <stop offset="100%" stop-color="#60a5fa" stop-opacity="0" />
-                </radialGradient>
-              </defs>
-
-              <!-- Dot grid background -->
-              <pattern
-                id="gridDotsContact"
-                width="18"
-                height="18"
-                patternUnits="userSpaceOnUse"
-              >
-                <circle cx="2" cy="2" r="1.2" fill="#94a3b8" opacity="0.3" />
-              </pattern>
-              <rect
-                width="100%"
-                height="100%"
-                fill="url(#gridDotsContact)"
-              />
-
-              <!-- Corner glows -->
-              <rect width="100%" height="100%" fill="url(#cornerGlowContact)" />
-
-              <!-- High-fidelity Glossy Sweeping Ribbons -->
-              <!-- 1. Background Shadow Ribbon -->
-              <path
-                d="M 0 0 C 250 120, -100 480, 220 700"
-                fill="none"
-                stroke="#e2e8f0"
-                stroke-width="85"
-                stroke-linecap="round"
-                opacity="0.6"
-              />
-              <path
-                d="M 0 0 C 250 120, -100 480, 220 700"
-                fill="none"
-                stroke="#cbd5e1"
-                stroke-width="65"
-                stroke-linecap="round"
-                opacity="0.4"
-              />
-
-              <!-- 2. Dark Blue Ribbon -->
-              <path
-                d="M 10 0 C 260 120, -90 480, 230 700"
-                fill="none"
-                stroke="url(#blueRibbonContact)"
-                stroke-width="48"
-                stroke-linecap="round"
-              />
-
-              <!-- 3. Red Accent Ribbon -->
-              <path
-                d="M 40 0 C 290 120, -60 480, 260 700"
-                fill="none"
-                stroke="url(#redRibbonContact)"
-                stroke-width="18"
-                stroke-linecap="round"
-              />
-
-              <!-- 4. Glossy Highlight/Reflection Strip -->
-              <path
-                d="M 22 0 C 272 120, -78 480, 242 700"
-                fill="none"
-                stroke="url(#lightBlueSheenContact)"
-                stroke-width="8"
-                stroke-linecap="round"
-              />
-
-              <!-- 5. Fine White Sparkle Seam -->
-              <path
-                d="M 25 0 C 275 120, -75 480, 245 700"
-                fill="none"
-                stroke="#ffffff"
-                stroke-width="2.5"
-                stroke-linecap="round"
-                opacity="0.9"
-              />
-
-              <!-- Secondary Accent Curves for Depth -->
-              <path
-                d="M 100 -50 C 350 150, 0 500, 350 750"
-                fill="none"
-                stroke="#60a5fa"
-                stroke-width="2"
-                stroke-dasharray="6 4"
-                opacity="0.4"
-              />
-              <path
-                d="M -50 100 C 150 300, -150 500, 100 800"
-                fill="none"
-                stroke="#f87171"
-                stroke-width="1.5"
-                opacity="0.3"
-              />
-            </svg>
-
-            <!-- Central floating brand logo (Just clean sitting, matching the mockup!) -->
-            <div
-              class="relative z-10 text-center flex flex-col items-center select-none transform hover:scale-[1.03] transition-transform duration-500 max-w-[640px] w-full"
-            >
+          <!-- Right Content Column (Logo) -->
+          <div class="hidden lg:flex lg:col-span-6 flex-col items-end justify-start pt-16 sm:pt-24 lg:pr-16 xl:pr-32">
+            <div class="flex flex-col items-center">
               <img
                 src="brand-logo.png"
                 alt="TVPicks Logo"
-                class="w-full h-auto object-contain mix-blend-multiply drop-shadow-md"
+                class="w-[280px] xl:w-[360px] h-auto object-contain mix-blend-multiply drop-shadow-md"
               />
               <p
-                class="text-xs font-bold text-slate-500 tracking-[0.2em] uppercase whitespace-nowrap bg-white/40 px-3 py-1 rounded-full backdrop-blur-sm border border-white/40 shadow-sm mt-4"
+                class="text-[13px] font-bold text-slate-500 tracking-[0.05em] text-center mt-2"
               >
                 Authorized OTT & IPTV Services
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </main>
