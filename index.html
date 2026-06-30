@@ -11,6 +11,11 @@
       body {
         font-family: "Inter", sans-serif;
       }
+      @media (min-width: 1024px) {
+        html {
+          font-size: clamp(11px, 0.8333vw, 20px);
+        }
+      }
     </style>
   </head>
   <body
@@ -18,7 +23,7 @@
   >
     <nav class="bg-white shadow-sm sticky top-0 z-50">
       <div
-        class="max-w-[1600px] mx-auto py-2 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+        class="max-w-[100rem] mx-auto py-2 px-4 sm:px-6 lg:px-8 flex items-center justify-between"
       >
         <a href="#home" class="flex items-center select-none shrink-0 group">
           <div class="h-16 sm:h-20 lg:h-24 w-48 sm:w-56 lg:w-64 overflow-hidden flex items-center justify-center -my-4 sm:-my-6">
@@ -26,7 +31,7 @@
               src="brand-logo.png"
               alt="TVPicks Logo"
               class="h-full w-full object-contain scale-[1.35] mix-blend-multiply transform group-hover:scale-[1.4] transition-transform duration-300"
-              style="margin-left: -14px; margin-top: 17px; margin-right: 14px; padding-bottom: -11px; padding-right: 5px; padding-left: -3px; padding-top: -6px;"
+              style="margin-left: 0px; margin-top: 9px; margin-right: 13px; padding-bottom: -11px; padding-right: 5px; padding-left: -3px; padding-top: -6px;"
             />
           </div>
         </a>
@@ -171,7 +176,7 @@
       </div>
     </div>
 
-    <main class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-2">
+    <main class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 pb-2">
       <div id="home-view" class="space-y-8 lg:space-y-12">
         <div
           class="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12 mt-4 sm:mt-6 lg:mt-8"
@@ -247,7 +252,7 @@
           </div>
 
           <div class="flex-1 w-full flex justify-center lg:justify-end">
-            <div class="w-full max-w-[850px] lg:max-w-[850px] xl:max-w-[950px]">
+            <div class="w-full max-w-[53.125rem] lg:max-w-[53.125rem] xl:max-w-[59.375rem]">
               <img
                 src="IMG_0101.webp"
                 alt="Premium OTT & IPTV Solutions"
@@ -550,7 +555,7 @@
           <!-- ContactCard -->
           <div
             id="contact-section"
-            class="w-full lg:w-[280px] xl:w-[400px] shrink-0"
+            class="w-full lg:w-[17.5rem] xl:w-[25rem] shrink-0"
           >
             <div
               class="bg-white rounded-xl shadow-sm border border-slate-100 p-6 h-full flex flex-col"
@@ -715,7 +720,7 @@
             <img
               src="brand-logo.png"
               alt="TVPicks Logo"
-              class="w-full max-w-[280px] xl:max-w-[340px] h-auto object-contain mix-blend-multiply drop-shadow-sm"
+              class="w-full max-w-[17.5rem] xl:max-w-[21.25rem] h-auto object-contain mix-blend-multiply drop-shadow-sm"
             />
           </div>
         </div>
@@ -792,7 +797,7 @@
             <img
               src="brand-logo.png"
               alt="TVPicks Logo"
-              class="w-full max-w-[280px] xl:max-w-[340px] h-auto object-contain mix-blend-multiply drop-shadow-sm"
+              class="w-full max-w-[17.5rem] xl:max-w-[21.25rem] h-auto object-contain mix-blend-multiply drop-shadow-sm"
             />
           </div>
 
@@ -871,7 +876,7 @@
             <img
               src="brand-logo.png"
               alt="TVPicks Logo"
-              class="w-full max-w-[280px] xl:max-w-[340px] h-auto object-contain mix-blend-multiply drop-shadow-sm"
+              class="w-full max-w-[17.5rem] xl:max-w-[21.25rem] h-auto object-contain mix-blend-multiply drop-shadow-sm"
             />
           </div>
 
@@ -992,7 +997,7 @@
             <img
               src="brand-logo.png"
               alt="TVPicks Logo"
-              class="w-full max-w-[280px] xl:max-w-[340px] h-auto object-contain mix-blend-multiply drop-shadow-sm"
+              class="w-full max-w-[17.5rem] xl:max-w-[21.25rem] h-auto object-contain mix-blend-multiply drop-shadow-sm"
             />
           </div>
 
@@ -1003,7 +1008,7 @@
     <footer
       class="bg-transparent border-t border-slate-200 mt-2 pt-12 pb-6 px-4 sm:px-6 lg:px-8"
     >
-      <div class="max-w-[1600px] mx-auto">
+      <div class="max-w-[100rem] mx-auto">
         <!-- Main Footer Card -->
         <div class="bg-transparent p-6 sm:p-8 mb-8">
           <div
@@ -1237,7 +1242,7 @@
           window.scrollTo({ top: 0, behavior: "smooth" });
         } else {
           if (mainEl) {
-            mainEl.className = "max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 pb-2";
+            mainEl.className = "max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 pb-2";
           }
           if (footerEl) {
             footerEl.className = "bg-transparent border-t border-slate-200 mt-2 pt-12 pb-6 px-4 sm:px-6 lg:px-8";
